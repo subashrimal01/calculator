@@ -7,7 +7,7 @@ import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -58,10 +58,18 @@ class MainActivity : AppCompatActivity() {
         binding.tvdivide.setOnClickListener {
             binding.tvexpression.append("/")
         }
+
+        binding.tvdot.setOnClickListener {
+            binding.tvexpression.append(".")
+        }
+
+        binding.tvzero.setOnClickListener {
+            binding.tvexpression.append("0")
+        }
         binding.tvback.setOnClickListener {
             val value = binding.tvexpression.text.toString()
-            if (value.isNotEmpty()){
-                binding.tvexpression.text = value.substring(0,value.length - 1)
+            if (value.isNotEmpty()) {
+                binding.tvexpression.text = value.substring(0, value.length - 1)
             }
         }
 
@@ -70,9 +78,9 @@ class MainActivity : AppCompatActivity() {
             val result = expression.evaluate()
             val longresult = result.toLong()
 
-            if(result == longresult.toDouble()){
+            if (result == longresult.toDouble()) {
                 binding.tvresult.text = longresult.toString()
-            }else{
+            } else {
                 binding.tvresult.text = result.toString()
             }
 

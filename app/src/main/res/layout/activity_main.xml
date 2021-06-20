@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#F3F0F0"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -15,20 +15,20 @@
         android:ellipsize="start"
         android:gravity="end"
         android:singleLine="true"
-        android:textSize="40sp"
         android:text=""
-        android:textColor="@color/numberButton" />
+        android:textColor="@color/black"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/tvresult"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:gravity="end"
         android:ellipsize="start"
+        android:gravity="end"
         android:singleLine="true"
         android:text=""
-        android:textSize="30sp"
-        android:textColor="@color/numberButton" />
+        android:textColor="@color/black"
+        android:textSize="60sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,28 +44,33 @@
             <TextView
                 android:id="@+id/tvclear"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="C" />
+                android:background="#D4D7D8"
+                android:text="C"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvopen"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="(" />
+                android:background="#D4D7D8"
+                android:text="("
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvclose"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text=")" />
+                android:background="#D4D7D8"
+                android:text=")"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <ImageView
                 android:id="@+id/tvback"
-                android:src="@drawable/ic_baseline_backspace_24"
-                android:padding="5mm"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="Back" />
+                android:background="#D4D7D8"
+                android:padding="5mm"
+                android:src="@drawable/ic_baseline_backspace_24"/>
 
         </LinearLayout>
 
@@ -78,26 +83,34 @@
             <TextView
                 android:id="@+id/tvseven"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="7" />
+                android:background="#F4F4F4"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
 
             <TextView
                 android:id="@+id/tveight"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="8" />
+                android:background="#F4F4F4"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvnine"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="9" />
+                android:background="#F4F4F4"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvdivide"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="/" />
+                android:background="#D4D7D8"
+                android:text="/"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
         </LinearLayout>
 
@@ -110,26 +123,34 @@
             <TextView
                 android:id="@+id/tvfour"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="4" />
+                android:background="#F4F4F4"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvfive"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="5" />
+                android:background="#F4F4F4"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvsix"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="6" />
+                android:background="#F4F4F4"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvmultiply"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="*" />
+                android:background="#D4D7D8"
+                android:text="x"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
         </LinearLayout>
 
@@ -142,26 +163,34 @@
             <TextView
                 android:id="@+id/tvone"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="1" />
+                android:background="#F4F4F4"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvtwo"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="2" />
+                android:background="#F4F4F4"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvthree"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="3" />
+                android:background="#F4F4F4"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvminus"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="-" />
+                android:background="#D4D7D8"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="60dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -173,26 +202,34 @@
             <TextView
                 android:id="@+id/tvdot"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="." />
+                android:background="#F4F4F4"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvzero"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="0" />
+                android:background="#F4F4F4"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="50dp"/>
 
             <TextView
                 android:id="@+id/tvequal"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="=" />
+                android:background="#EF8221"
+                android:text="="
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
             <TextView
                 android:id="@+id/tvplus"
                 style="@style/numberButtonStyle"
-                android:background="#455A64"
-                android:text="+" />
+                android:background="#D4D7D8"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
 
         </LinearLayout>
 
